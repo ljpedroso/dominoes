@@ -32,12 +32,6 @@ const defaultState: PersistedState = {
   winsB: 0
 };
 
-const panelClass =
-  'rounded-[2.5rem] border border-slate-200/60 bg-white/80 backdrop-blur-md p-6 shadow-xl shadow-slate-200/50';
-const headerClass =
-  'rounded-[2.5rem] bg-[#0f3b9e] p-8 shadow-2xl relative overflow-hidden';
-const fieldClass =
-  'mt-1 w-full rounded-2xl border border-slate-200 bg-slate-50/50 px-5 py-4 text-lg text-slate-900 focus:border-[#0f3b9e] focus:bg-white focus:ring-4 focus:ring-[#0f3b9e]/10 transition-all outline-none font-medium';
 
 function isValidState(value: unknown): value is PersistedState {
   if (!value || typeof value !== 'object') return false;
